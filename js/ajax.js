@@ -44,12 +44,17 @@ $(document).ready(function() {
                     alert("Load was performed.");
                 });
             });
+            $("#reset").click(function () {
+                $.get("http://localhost:8000/DEMOService/gantrycrane/reset", function() {
+                    alert("Load was performed.");
+                });
+            });
         });
     });
     $("#controlreachstacker").click(function() {
         // load home page on click
         $("#contentdiv").load("sub/controlreachstacker.html", function() {
-            $("#fwdbutton").click(function() {
+            /*$("#fwdbutton").click(function() {
                 alert("I got clicked");
                 $.get("http://localhost:8000/DEMOService/reachstacker/move/fwd/" + $("#fwdvalue").val(), function() {
                     alert("Load was performed.");
@@ -90,21 +95,46 @@ $(document).ready(function() {
                 $.get("http://localhost:8000/DEMOService/reachstacker/move/turn/" + $("#turnvalue").val(), function() {
                     alert("Load was performed.");
                 });
+            });*/
+            $("#getFromTruck").click(function() {
+                $.get("http://localhost:8000/DEMOService/reachstacker/get/truck", function() {
+                    alert("Load was performed.");
+                });
+            });
+            $("#putOnTruck").click(function () {
+                $.get("http://localhost:8000/DEMOService/reachstacker/put/truck", function() {
+                    alert("Load was performed.");
+                });
+            });
+            $("#getFromStorage").click(function() {
+                $.get("http://localhost:8000/DEMOService/reachstacker/get/storage", function() {
+                    alert("Load was performed.");
+                });
+            });
+            $("#putOnStorage").click(function () {
+                $.get("http://localhost:8000/DEMOService/reachstacker/put/storage", function() {
+                    alert("Load was performed.");
+                });
+            });
+            $("#reset").click(function () {
+                $.get("http://localhost:8000/DEMOService/reachstacker/reset", function() {
+                    alert("Load was performed.");
+                });
             });
         });
     });
-    $("#controllkw").click(function() {
+    $("#controltruck").click(function() {
         // load home page on click
-        $("#contentdiv").load("sub/controllkw.html", function() {
+        $("#contentdiv").load("sub/controltruck.html", function() {
             $("#fwdbutton").click(function() {
                 alert("LKW got clicked");
-                $.get("http://localhost:8000/DEMOService/lkw/move/fwd/" + $("#fwdvalue").val(), function() {
+                $.get("http://localhost:8000/DEMOService/truck/move/fwd/" + $("#fwdvalue").val(), function() {
                     alert("LKW was performed.");
                 });
             });
             $("#bwdbutton").click(function() {
                 alert("LKW got clicked");
-                $.get("http://localhost:8000/DEMOService/lkw/move/bwd/" + $("#bwdvalue").val(), function() {
+                $.get("http://localhost:8000/DEMOService/truck/move/bwd/" + $("#bwdvalue").val(), function() {
                     alert("LKW was performed.");
                 });
             });
