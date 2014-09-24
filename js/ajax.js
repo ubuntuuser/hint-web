@@ -15,8 +15,32 @@ $(document).ready(function() {
     $("#controlcrane").click(function() {
         $("#contentdiv").load("sub/controlgantrycrane.html", function() {
             $("#getFromTrain").click(function() {
-                alert("I got clicked");
                 $.get("http://localhost:8000/DEMOService/gantrycrane/get/train", function() {
+                    alert("Load was performed.");
+                });
+            });
+            $("#putOnTrain").click(function () {
+                $.get("http://localhost:8000/DEMOService/gantrycrane/put/train", function() {
+                    alert("Load was performed.");
+                });
+            });
+            $("#getFromShip").click(function() {
+                $.get("http://localhost:8000/DEMOService/gantrycrane/get/ship", function() {
+                    alert("Load was performed.");
+                });
+            });
+            $("#putOnShip").click(function () {
+                $.get("http://localhost:8000/DEMOService/gantrycrane/put/ship", function() {
+                    alert("Load was performed.");
+                });
+            });
+            $("#getFromStorage").click(function() {
+                $.get("http://localhost:8000/DEMOService/gantrycrane/get/storage", function() {
+                    alert("Load was performed.");
+                });
+            });
+            $("#putOnStorage").click(function () {
+                $.get("http://localhost:8000/DEMOService/gantrycrane/put/storage", function() {
                     alert("Load was performed.");
                 });
             });
