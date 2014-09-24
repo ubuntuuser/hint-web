@@ -12,6 +12,16 @@ $(document).ready(function() {
     $("#watch").click(function(){
        $("#contentdiv").load("sub/watch.html"); 
     });
+    $("#controlcrane").click(function() {
+        $("#contentdiv").load("sub/controlgantrycrane.html", function() {
+            $("#getFromTrain").click(function() {
+                alert("I got clicked");
+                $.get("http://localhost:8000/DEMOService/gantrycrane/get/train", function() {
+                    alert("Load was performed.");
+                });
+            });
+        });
+    });
     $("#controlreachstacker").click(function() {
         // load home page on click
         $("#contentdiv").load("sub/controlreachstacker.html", function() {
