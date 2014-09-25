@@ -127,15 +127,15 @@ $(document).ready(function() {
     $("#controltruck").click(function() {
         // load home page on click
         $("#contentdiv").load("sub/controltruck.html", function() {
-            $("#fwdbutton").click(function() {
+            $("#toloading").click(function() {
                 alert("LKW got clicked");
-                $.get("http://" + $host + ":8000/DEMOService/truck/move/fwd/" + $("#fwdvalue").val(), function() {
+                $.get("http://" + $host + ":8000/DEMOService/truck/goto/loading", function() {
                     alert("LKW was performed.");
                 });
             });
-            $("#bwdbutton").click(function() {
+            $("#tostart").click(function() {
                 alert("LKW got clicked");
-                $.get("http://" + $host + ":8000/DEMOService/truck/move/bwd/" + $("#bwdvalue").val(), function() {
+                $.get("http://" + $host + ":8000/DEMOService/truck/goto/start", function() {
                     alert("LKW was performed.");
                 });
             });
