@@ -53,7 +53,7 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Control Robots <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#" id="controlreachstacker">Reachstacker</a></li>
-                                <li><a href="#" id="controllkw">LKW</a></li>
+                                <li><a href="#" id="controltruck">LKW</a></li>
                                 <li><a href="#" id="controlcrane">Portal crane</a></li>
                             </ul>
                         </li>
