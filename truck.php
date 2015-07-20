@@ -47,13 +47,13 @@
         $host = "10.0.0.2";
         $("#contentdiv").load("sub/controltruck.html", function() {
             $("#toloading").click(function() {
-                alert("LKW got clicked");
+                alert("LKW to LoadingStation");
                 $.get("http://" + $host + ":8000/DEMOService/truck/goto/loading", function() {
                     alert("LKW was performed.");
                 });
             });
             $("#tostart").click(function() {
-                alert("LKW got clicked");
+                alert("LKW to Start");
                 $.get("http://" + $host + ":8000/DEMOService/truck/goto/start", function() {
                     alert("LKW was performed.");
                 });

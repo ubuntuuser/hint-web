@@ -1,28 +1,48 @@
-<div class="page-header">Control the Reachstacker</div>
+<div class="page-header">Control the Gantry Crane</div>
 <div class="row">
     <div class="col-sm-4">
         <div class="panel panel-success">
             <div class="panel-heading">
-                <h3 class="panel-title">Get Container From Truck</h3>
+                <h3 class="panel-title">Get Container From Train</h3>
             </div>
             <div class="panel-body">
-                <input type="button" id="getFromTruck" value="Go!"/>
+                <input type="button" id="getFromTrain" value="Go!"/>
             </div>
         </div>
     </div>
     <div class="col-sm-4">
         <div class="panel panel-info">
             <div class="panel-heading">
-                <h3 class="panel-title">Put Container On Truck</h3>
+                <h3 class="panel-title">Put Container On Train</h3>
             </div>
             <div class="panel-body">
-                <input type="button" id="putOnTruck" value="Go!"/>
+                <input type="button" id="putOnTrain" value="Go!"/>
             </div>
         </div>
     </div><!-- /.col-sm-4 -->
-    
 </div>
-
+<div class="row">
+    <div class="col-sm-4">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">Get Container From Ship</h3>
+            </div>
+            <div class="panel-body">
+                <input type="button" id="getFromShip" value="Go!"/>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">Put Container On Ship</h3>
+            </div>
+            <div class="panel-body">
+                <input type="button" id="putOnShip" value="Go!"/>
+            </div>
+        </div>
+    </div><!-- /.col-sm-4 -->
+</div>
 <div class="row">
     <div class="col-sm-4">
         <div class="panel panel-success">
@@ -44,21 +64,4 @@
             </div>
         </div>
     </div><!-- /.col-sm-4 -->
-</div>
-<div class="row">
-    <div class="col-sm-4">
-        <div class="panel panel-success">
-            <div class="panel-heading">
-                <h3 class="panel-title">Reset</h3>
-            </div>
-            <div class="panel-body">
-                <input type="button" id="reset" value="Go!"/>
-            </div>
-        </div>
-        <div class="col-sm-4">
-        <div class="panel">
-        <image src="./img/rs.jpg" />
-        </div>
-    </div>
-    </div>
 </div>

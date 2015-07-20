@@ -45,40 +45,17 @@
         <script src="./js/jquery.rest.min.js"></script>
         <script lang="text/js">
         $host = "10.0.0.2";
-        $("#contentdiv").load("sub/controlgantrycrane.html", function() {
-            $("#getFromTrain").click(function() {
-                    alert("Get Container from Train");
-                $.get("http://" + $host + ":8000/DEMOService/gantrycrane/get/train", function() {
+        $("#contentdiv").load("sub/controltrain.html", function() {
+            $("#toloading").click(function() {
+                alert("Train to Loading Station");
+                $.get("http://" + $host + ":8000/DEMOService/truck/goto/loading", function() {
+                    alert("Train performed.");
                 });
             });
-            $("#putOnTrain").click(function () {
-                    alert("Put Container on Train");
-                $.get("http://" + $host + ":8000/DEMOService/gantrycrane/put/train", function() {
-                });
-            });
-            $("#getFromShip").click(function() {
-                    alert("Get Container from Ship");
-                $.get("http://" + $host + ":8000/DEMOService/gantrycrane/get/ship", function() {
-                });
-            });
-            $("#putOnShip").click(function () {
-                    alert("Put Container on Ship");
-                $.get("http://" + $host + ":8000/DEMOService/gantrycrane/put/ship", function() {
-                });
-            });
-            $("#getFromStorage").click(function() {
-                    alert("Get Container from Storage");
-                $.get("http://" + $host + ":8000/DEMOService/gantrycrane/get/storage", function() {
-                });
-            });
-            $("#putOnStorage").click(function () {
-                    alert("Put Container on Storage");
-                $.get("http://" + $host + ":8000/DEMOService/gantrycrane/put/storage", function() {
-                });
-            });
-            $("#reset").click(function () {
-                    alert("Reset");
-                $.get("http://" + $host + ":8000/DEMOService/gantrycrane/reset", function() {
+            $("#tostart").click(function() {
+                alert("Train to Start");
+                $.get("http://" + $host + ":8000/DEMOService/truck/goto/start", function() {
+                    alert("Train performed.");
                 });
             });
         });

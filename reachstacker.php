@@ -47,28 +47,28 @@
         $host = "10.0.0.2";
         $("#contentdiv").load("sub/controlreachstacker.html", function() {
             $("#getFromTruck").click(function() {
+                    alert("Get Container from Truck");
                 $.get("http://" + $host + ":8000/DEMOService/reachstacker/get/truck", function() {
-                    alert("Load was performed.");
                 });
             });
             $("#putOnTruck").click(function () {
+                    alert("Put Container on Truck");
                 $.get("http://" + $host + ":8000/DEMOService/reachstacker/put/truck", function() {
-                    alert("Load was performed.");
                 });
             });
             $("#getFromStorage").click(function() {
+                    alert("Get Container from Storage");
                 $.get("http://" + $host + ":8000/DEMOService/reachstacker/get/storage", function() {
-                    alert("Load was performed.");
                 });
             });
             $("#putOnStorage").click(function () {
+                    alert("Put Container on Storage");
                 $.get("http://" + $host + ":8000/DEMOService/reachstacker/put/storage", function() {
-                    alert("Load was performed.");
                 });
             });
             $("#reset").click(function () {
+                    alert("Reset");
                 $.get("http://" + $host + ":8000/DEMOService/reachstacker/reset", function() {
-                    alert("Load was performed.");
                 });
             });
         });

@@ -1,0 +1,15 @@
+<div class="page-header">Live Stream</div>
+<div class="row">
+    <div class="col-sm-4">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">Live Stream</h3>
+            </div>
+            <div >
+                <video src="http://10.0.0.2:8080/stream.webm" autoplay height="240" width="960"/>
+            </div>
+
+        </div>
+    </div>
+    
+</div>
